@@ -1,0 +1,12 @@
+<h2>Demonstration of services</h2>
+<div *ngIf="bRet; then ifblock; else elseblock"></div>
+
+<ng-template #ifblock>
+    <h3>The number entered is prime number</h3>
+</ng-template>
+
+<ng-template #elseblock>
+    <h3>The number entered is not a prime number</h3>
+</ng-template>
+
+<h3>Number of capital letters in our string is : {{iRet}}</h3>
